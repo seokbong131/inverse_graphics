@@ -68,10 +68,11 @@ Release/
 *.out
 
 # =========================================
-# tinyrenderer specific
+# inverse graphics specific
 # =========================================
 
-# Generated images (framebuffer output)
+# Generated images
+input/
 output/
 *.png
 *.tga
