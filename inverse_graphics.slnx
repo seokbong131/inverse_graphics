@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="modules/image_quality_measure/image_quality_measure.vcxproj" />
+  <Project Path="modules/image_quality_measure/image_quality_measure.vcxproj" Id="8f5f3c83-d105-4717-8672-d42334ae3775" />
 </Solution>
