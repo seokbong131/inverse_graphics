@@ -4,5 +4,5 @@
 
 namespace validity
 {
-	void validate_pixel_diff(const cv::Mat& image_a, const cv::Mat& image_b);
+void validate_pixel_diff(const cv::Mat& image_a, const cv::Mat& image_b);
 }

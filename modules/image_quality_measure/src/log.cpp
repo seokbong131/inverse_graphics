@@ -1,20 +1,13 @@
-#include <iostream>
-#include <opencv2/opencv.hpp>
-
 #include "log.hpp"
 
-void log_debug(const string& msg) {
-    cout << "[DEBUG] " << msg << endl;
-}
-void log_error(const string& msg) {
-    cerr << "[ERROR] " << msg << endl;
-}
-void log_info(const string& msg) {
-    cout << "[INFO] " << msg << endl;
-}
-void log_warning(const string& msg) {
-    cout << "[WARNING] " << msg << endl;
-}
+#include <iostream>
+
+#include <opencv2/opencv.hpp>
+
+void log_debug(const string& msg) { cout << "[DEBUG] " << msg << endl; }
+void log_error(const string& msg) { cerr << "[ERROR] " << msg << endl; }
+void log_info(const string& msg) { cout << "[INFO] " << msg << endl; }
+void log_warning(const string& msg) { cout << "[WARNING] " << msg << endl; }
 
 string to_data_type(int macro_constant) {
     string type;
@@ -30,17 +23,18 @@ string to_data_type(int macro_constant) {
     */
     // depth -> string
     int depth = macro_constant & CV_MAT_DEPTH_MASK;
-    switch (depth)
-    {
-    case CV_8U:  type = "CV_8U";  break;
-    case CV_8S:  type = "CV_8S";  break;
-    case CV_16U: type = "CV_16U"; break;
-    case CV_16S: type = "CV_16S"; break;
-    case CV_32S: type = "CV_32S"; break;
-    case CV_32F: type = "CV_32F"; break;
-    case CV_64F: type = "CV_64F"; break;
-    case CV_16F: type = "CV_16F"; break;
-    default:     type = "None_";  break;
+    switch (depth) {
+            // clang-format off
+        case CV_8U:  type = "CV_8U";  break;
+        case CV_8S:  type = "CV_8S";  break;
+        case CV_16U: type = "CV_16U"; break;
+        case CV_16S: type = "CV_16S"; break;
+        case CV_32S: type = "CV_32S"; break;
+        case CV_32F: type = "CV_32F"; break;
+        case CV_64F: type = "CV_64F"; break;
+        case CV_16F: type = "CV_16F"; break;
+        default:     type = "None_";  break;
+            // clang-format on
     }
 
     // channels -> string

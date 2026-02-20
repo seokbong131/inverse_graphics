@@ -1,16 +1,18 @@
-#include "log.hpp"
 #include "pixel_diff.hpp"
+
+#include "log.hpp"
 #include "utils.hpp"
 
 using namespace iqm_config::color;
 
 cv::Mat PixelDiff::compare(const cv::Mat& image_a, const cv::Mat& image_b) const {
-    switch (image_b.channels())
-    {
-    case 1:  return compare_GRAY(image_a, image_b);
-    case 3:  return compare_RGB(image_a, image_b);
-    case 4:  return compare_RGBA(image_a, image_b);
-    default: throw std::runtime_error("Need to check the number of channels.");
+    switch (image_b.channels()) {
+            // clang-format off
+        case 1:  return compare_GRAY(image_a, image_b);
+        case 3:  return compare_RGB(image_a, image_b);
+        case 4:  return compare_RGBA(image_a, image_b);
+        default: throw std::runtime_error("Need to check the number of channels.");
+            // clang-format on
     }
 }
 
