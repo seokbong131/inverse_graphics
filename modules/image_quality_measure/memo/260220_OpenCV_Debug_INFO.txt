@@ -1,0 +1,14 @@
+[ INFO:0@0.118] global registry_parallel.impl.hpp:96 cv::parallel::ParallelBackendRegistry::ParallelBackendRegistry
+	core(parallel): Enabled backends(3, sorted by priority): ONETBB(1000); TBB(990); OPENMP(980)
+[ INFO:0@0.119] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad
+	load C:\development\opencv_build\install\x64\vc18\bin\opencv_core_parallel_onetbb4130_64d.dll => FAILED
+[ INFO:0@0.120] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad
+	load opencv_core_parallel_onetbb4130_64d.dll => FAILED
+[ INFO:0@0.120] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad
+	load C:\development\opencv_build\install\x64\vc18\bin\opencv_core_parallel_tbb4130_64d.dll => FAILED
+[ INFO:0@0.121] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad
+	load opencv_core_parallel_tbb4130_64d.dll => FAILED
+[ INFO:0@0.121] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad
+	load C:\development\opencv_build\install\x64\vc18\bin\opencv_core_parallel_openmp4130_64d.dll => FAILED
+[ INFO:0@0.122] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad
+	load opencv_core_parallel_openmp4130_64d.dll => FAILED
