@@ -23,7 +23,7 @@ cv::Mat PixelDiff::compare_GRAY(const cv::Mat& image_a, const cv::Mat& image_b) 
     cv::Mat diff;
     cv::compare(dst, m_threshold, diff, cv::CMP_GT);
 
-    cv::Mat result(dst.size(), dst.type(), 0);
+    cv::Mat result(dst.size(), dst.type(), cv::Scalar(0));
     result.setTo(255, diff);
 
     log_debug("GRAY pixel_diff comparison completed");

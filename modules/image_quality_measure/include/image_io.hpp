@@ -12,6 +12,6 @@ namespace image_io
 filesystem::path join_path(string_view folder_path,
                            string_view file_name,
                            string_view file_extension);
-cv::Mat          load(const filesystem::path& img_path, int flag = cv::IMREAD_COLOR);
+cv::Mat          load(const filesystem::path& img_path, int flag = cv::IMREAD_UNCHANGED);
 bool             save(const filesystem::path& img_path, const cv::Mat& img);
 }
